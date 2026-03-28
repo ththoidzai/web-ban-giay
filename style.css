@@ -1,0 +1,205 @@
+/* RESET & BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #f5f5f5;
+  color: #333;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.header {
+  background: #4338ca;
+  color: white;
+}
+
+.header-top {
+  display: flex;
+  align-items: flex-start; /* cho phép stacking */
+  justify-content: space-between;
+  padding: 15px 0;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: bold;
+  font-style: italic;
+  line-height: 1.1;
+  min-width: 180px;
+  margin-left: -10px;
+}
+
+.logo span {
+  font-size: 14px;
+  font-style: normal;
+  display: block;
+}
+
+.search-bar {
+  flex: 1;
+  max-width: 580px;
+  margin: 0 20px;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  background: white;
+  font-size: 15px;
+  align-self: center;
+}
+
+.search-bar::placeholder {
+  color: #999;
+}
+
+.right-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 8px;
+  min-width: 240px;
+}
+
+.top-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+}
+
+.user-text {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.user .sub {
+  font-size: 12px;
+  color: #d0d0ff;
+}
+
+.header-nav-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0 15px 0;
+}
+
+
+.icon-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.icon {
+  font-size: 18px;
+}
+
+/* Menu: dưới logo, left-aligned (padding-left nhỏ để sát logo) */
+.menu {
+  display: flex;
+  gap: 35px;
+  font-size: 15px;
+  font-weight: 600;
+  margin-left: -10px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+.bottom-icons {
+  display: flex;
+  gap: 20px;
+  font-size: 13px;
+}
+
+
+/* Banner giữ nguyên */
+.banner {
+  display: grid;
+  grid-template-columns: 1fr 2.5fr 1fr;
+  gap: 15px;
+  padding: 20px 0 30px;
+  margin-bottom: 30px;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Banner giữa: hiển thị từ trên xuống, không cắt phần trên */
+.banner-center {
+  object-position: center top;
+}
+
+.banner-left {
+  object-position: center center;
+}
+
+.banner-right {
+  object-position: center center;
+}
+
+/* Products - giữ nguyên hoặc tinh chỉnh nhỏ */
+.products h2 {
+  text-align: center;
+  font-size: 35px;
+  font-style: italic;
+  margin: 50px 0 30px;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  padding: 20px;
+}
+
+.card p {
+  margin: 10px 0 5px;
+  font-size: 15px;
+}
+
+.card span {
+  color: #e63946;
+  font-weight: bold;
+  font-size: 18px;
+  display: block;
+  padding-bottom: 15px;
+}
